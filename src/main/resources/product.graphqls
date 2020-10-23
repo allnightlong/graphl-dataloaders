@@ -1,0 +1,28 @@
+type Product {
+  id: ID!
+  name: String
+  brand: String
+  reviews: [ProductReview!]!
+}
+
+type ProductReview {
+  id: ID!
+  title: String
+  body: String
+  replies: [ProductReviewReply!]!
+}
+
+type ProductReviewReply {
+  id: ID!
+  user: String
+  body: String
+}
+
+type Query {
+  products:[Product!]!
+}
+
+
+schema {
+  query: Query
+}

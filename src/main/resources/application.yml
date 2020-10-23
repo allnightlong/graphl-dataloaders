@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-boot-graphql
+  profiles:
+    active: dataloaders
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    tracing-enabled: true
+    actuator-metrics: true
+  tools:
+    schema-location-pattern: "**/*.graphqls"
+    schema-parser-options:
+      introspection-enabled: true
+    introspection-enabled: true
+
+altair:
+  enabled: true
