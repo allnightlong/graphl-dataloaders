@@ -1,4 +1,4 @@
-#GraphQL DataLoaders
+# GraphQL DataLoaders
 Little project to demonstrate `n + 1` problem in graphql queries and how to resolve it.
 
 ## Default approach
