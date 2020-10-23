@@ -2,7 +2,7 @@ spring:
   application:
     name: spring-boot-graphql
   profiles:
-    active: dataloaders
+    active: default
 
 management:
   endpoints:
